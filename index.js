@@ -5,7 +5,7 @@ const coolEmoji = ['😎', '⛄️', '❄️', '🥶', '🧊'];
 
 try {
   console.log(`Running Cool action on ${github.repository}`);
-  core.setOutput("time", coolEmoji[Math.floor(Math.random() * coolEmoji.length)]);
+  core.setOutput("a_cool_emoji", coolEmoji[Math.floor(Math.random() * coolEmoji.length)]);
 } catch (error) {
   core.setFailed(error.message);
 }
