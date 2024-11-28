@@ -1,0 +1,8 @@
+name: 'Cool Action'
+description: 'Do useful stuff for open source'
+outputs:
+  a_cool_emoji:
+    description: 'The time we greeted you'
+runs:
+  using: 'node20'
+  main: 'index.js'
