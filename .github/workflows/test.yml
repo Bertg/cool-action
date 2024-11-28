@@ -8,8 +8,5 @@ jobs:
       - name: Hello world action step
         id: cool
         uses: bertg/cool-action@main
-        with:
-          who-to-greet: 'Mona the Octocat'
-      # Use the output from the `hello` step
       - name: Get the output
         run: echo "The output was ${{ steps.cool.outputs.a_cool_emoji }}"
